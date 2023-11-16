@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue)
 # ImageJ-Microscopy-Automation
 ## Table of contents
 * [Introduction](#Intro)
