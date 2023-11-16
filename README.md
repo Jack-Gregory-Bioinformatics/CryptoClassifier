@@ -3,7 +3,8 @@
 ## Table of contents
 * [Introduction](#Intro)
 * [Installation](#Installation)
-* [Start](#Start)
+* [Start(Local)](#Start (Local))
+* [Start(Mycoserv)](#Start (Mycoserv))
 
 ## Intro
 The scope of this project is to automate microscopy image analysis utilising Fiji/ImageJ.
@@ -26,8 +27,9 @@ To run the macro on your local machine download all files from the Local_Scripts
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
-	
-## Start
+#To run the pipeline on the Mycoserv you need not download files, the pipeline is set up already.
+
+## Start (Local)
 To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) via Fiji/ImageJ by selecting Tooldbar -> Plugins -> Macros -> Run and then select the 'FCI_v*.ijm' macro from where you saved it.
 * You will be prompted for an input directory (The folder containing your images)
 * You will be prompted for an output directory (The folder where the output will be saved)
@@ -38,6 +40,15 @@ $ python main.py
 
 ```
 
-To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio.
+To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio. The R scripts can then be opened within RStudio and run to process all the .csv files.
 
-The R scripts can then be opened within RStudio and run to process all the .csv files.
+## Start (Mycoserv)
+WIP
+
+* Utilises the code blocks written in the Mycoserv_Scipts folder
+* Allows for running on the Mycoserv and is run via the command line
+
+```
+$ FCI.bat <input_directory> <output-directory>
+
+```

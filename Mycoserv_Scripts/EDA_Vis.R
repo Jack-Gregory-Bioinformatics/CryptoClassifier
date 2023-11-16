@@ -103,3 +103,5 @@ print(scatter_plot_matrix)
 
 # Save the scatter_plot_matrix to an image file (e.g., in PNG format)
 ggsave("scatter_plot_matrix.png", plot = scatter_plot_matrix, width = 10, height = 10, units = "in") # nolint
+
+print("Completed EDA and Visualisation")
