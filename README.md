@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue) ![]https://img.shields.io/badge/Stable_Local_build-v1.3-green ![]https://img.shields.io/badge/Stable_Mycoserv_build-WIP-orange
+![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue) ![](https://img.shields.io/badge/Stable_Local_build-v1.3-green) ![](https://img.shields.io/badge/Stable_Mycoserv_build-WIP-orange)
 # ImageJ-Microscopy-Automation
 ## Table of contents
 * [Introduction](#Intro)
