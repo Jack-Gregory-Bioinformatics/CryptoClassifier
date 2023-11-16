@@ -107,4 +107,3 @@ print(scatter_plot_matrix)
 ggsave("scatter_plot_matrix.png", plot = scatter_plot_matrix, width = 10, height = 10, units = "in") # nolint
 
 print("Completed EDA and Visualisation")
-
