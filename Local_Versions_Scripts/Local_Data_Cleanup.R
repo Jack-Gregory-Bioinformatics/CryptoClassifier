@@ -10,7 +10,7 @@ library(tidyr)
 # require(tidyverse)
 
 # List all CSV files in the directory
-csv_directory = "C:/Users/jbg209/OneDrive - University of Exeter/Documents/2023_24_PhD_Year_1/04_ImageJ_Automation/Results_1.2.7.2"
+csv_directory = "C:/Users/" #Insert your ImageJ macro output directory here
 
 csv_files <- list.files(csv_directory, pattern = "\\.csv$", full.names = TRUE)
 
