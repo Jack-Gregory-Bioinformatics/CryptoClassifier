@@ -22,13 +22,14 @@ Project is created with:
 * CSBDeep (ImageJ Package)
 * R
 
+To run the macro on your local machine download all files from the Local_Scripts folder.
 ```
 $ pip install pytorch
 
 ```
 	
 ## Start
-To run this pipeline on your local machine, download and run the ImageJ macro (FCI_v*.ijm).
+To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm).
 * You will be prompted for an input directory (The folder containing your images)
 * You will be prompted for an output directory (The folder where the output will be saved)
 
