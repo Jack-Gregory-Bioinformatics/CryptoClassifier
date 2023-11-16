@@ -23,11 +23,11 @@ Project is created with:
 * CSBDeep (ImageJ Package)
 * R
 
-To run the macro on your local machine download all files from the Local_Scripts folder.
+To use the macro on your local machine download all files from the Local_Scripts folder.
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
-To run the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
+To use the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
 
 ## Start-Local
 To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) via Fiji/ImageJ by selecting Tooldbar -> Plugins -> Macros -> Run and then select the 'FCI_v*.ijm' macro from where you saved it.
