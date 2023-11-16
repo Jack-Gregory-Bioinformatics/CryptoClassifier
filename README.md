@@ -24,8 +24,7 @@ Project is created with:
 
 To run the macro on your local machine download all files from the Local_Scripts folder.
 ```
-$ pip install pytorch
-
+$ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
 	
 ## Start
