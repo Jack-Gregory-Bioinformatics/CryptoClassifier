@@ -19,8 +19,10 @@ $ pip install pytorch
 
 ```
 	
-## start
-To run this pipeline on your local machine, download and run the ImageJ macro (FCI_v*.ijm)
+## Start
+To run this pipeline on your local machine, download and run the ImageJ macro (FCI_v*.ijm).
+* You will be prompted for an input directory (The folder containing your images)
+* You will be prompted for an output directory (The folder where the output will be saved)
 
 ```
 $ python main.py
