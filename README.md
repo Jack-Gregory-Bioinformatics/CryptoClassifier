@@ -13,6 +13,8 @@ The ImageJ macro (FCI_v*.ijm) automatically removes background fluorescence, det
 * StarDist masking .jpeg with labels (allows for manual checking and cross referencing with the .csv file)
 * Background fluorescence removed .jpeg (allows for easy check of image quality)
 
+To aid with data processing, a Data_Cleanup.R script has been created to process all the .csv files generated, extract relevant data and rename column headers to a human readable format. 
+
 ## Installation
 Project is created with:
 * Fiji/ImageJ
