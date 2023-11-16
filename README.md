@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue)
+![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue) ![]https://img.shields.io/badge/Stable_Local_build-v1.3-green ![]https://img.shields.io/badge/Stable_Mycoserv_build-WIP-orange
 # ImageJ-Microscopy-Automation
 ## Table of contents
 * [Introduction](#Intro)
@@ -27,7 +27,7 @@ To run the macro on your local machine download all files from the Local_Scripts
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
-#To run the pipeline on the Mycoserv you need not download files, the pipeline is set up already.
+To run the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
 
 ## Start-Local
 To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) via Fiji/ImageJ by selecting Tooldbar -> Plugins -> Macros -> Run and then select the 'FCI_v*.ijm' macro from where you saved it.
@@ -35,10 +35,6 @@ To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) vi
 * You will be prompted for an output directory (The folder where the output will be saved)
 
 The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name.
-```
-$ python main.py
-
-```
 
 To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio. The R scripts can then be opened within RStudio and run to process all the .csv files.
 
