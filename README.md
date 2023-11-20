@@ -23,7 +23,7 @@ Project is created with:
 * CSBDeep (ImageJ Package)
 * R
 
-To use the macro on your local machine download all files from the Local_Scripts folder.
+To use the macro on your local machine download all files from the Local_Scripts folder or run the following code:
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
