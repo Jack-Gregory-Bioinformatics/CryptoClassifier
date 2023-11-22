@@ -16,6 +16,8 @@ The ImageJ macro (FCI_v*.ijm) automatically removes background fluorescence, det
 
 To aid with data processing, a Data_Cleanup.R script has been created to process all the .csv files generated, extract relevant data and rename column headers to a human readable format. To aid with data analysis, a EDA_Vis.R script has been created to carry out exploratory data analysis and visualisation.
 
+![Alt text](C:\Users\jbg209\OneDrive - University of Exeter\Documents\2023_24_PhD_Year_1\04_ImageJ_Automation\04_Method_1.drawio.svg)
+
 ## Installation
 Project is created with:
 * Fiji/ImageJ
