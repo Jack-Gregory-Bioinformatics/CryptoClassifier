@@ -5,6 +5,7 @@
 * [Installation](#Installation)
 * [Start-Local](#Start-Local)
 * [Start-Mycoserv](#Start-Mycoserv)
+* [Flowchart](#visual-flowchart-of-ijm-macro)
 
 ## Intro
 The scope of this project is to automate microscopy image analysis utilising Fiji/ImageJ.
