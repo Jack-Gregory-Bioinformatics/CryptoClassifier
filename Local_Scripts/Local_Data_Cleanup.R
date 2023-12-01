@@ -39,7 +39,7 @@ for (file in csv_files) {
 
   # Split label column into EB naming scheme
   data <- data %>%
-    separate(Condition, into = c("Date", "Strain", "Condition", "Time", "Stain", "Rep", "Image"), sep = "_") # nolint
+    separate(Condition, into = c("Date", "Strain", "Condition", "Time", "Stain", "Rep", "Image"), sep = "_") #This will need to be edited based on your labs naming scheme # nolint
 
   # Generate the output file name
   output_file <- paste0(data$Condition[1], "_processed_data.csv")

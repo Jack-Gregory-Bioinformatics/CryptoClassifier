@@ -11,9 +11,9 @@
 The scope of this project is to automate microscopy image analysis utilising Fiji/ImageJ.
 
 The ImageJ macro (FCI_v*.ijm) automatically removes background fluorescence, detects cells and provides relevant data on a per image basis, allowing for the analysis of images of varying quality with no extra user input. The macro will output 3 files per image:
-* .csv file (contains all identified cell data, each row = individual cell)
-* StarDist masking .jpeg with labels (allows for manual checking and cross referencing with the .csv file)
-* Background fluorescence removed .jpeg (allows for easy check of image quality)
+* .csv file (contains all identified cell data, each row = individual cell).
+* StarDist masking .jpeg with labels (allows for manual checking and cross referencing with the .csv file).
+* Background fluorescence removed .jpeg (allows for easy check of image quality).
 
 To aid with data processing, a Data_Cleanup.R script has been created to process all the .csv files generated, extract relevant data and rename column headers to a human readable format. To aid with data analysis, a EDA_Vis.R script has been created to carry out exploratory data analysis and visualisation.
 
@@ -32,18 +32,20 @@ To use the pipeline on the Mycoserv you need not download files, the pipeline is
 
 ## Start-Local
 To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) via Fiji/ImageJ by selecting Tooldbar -> Plugins -> Macros -> Run and then select the 'FCI_v*.ijm' macro from where you saved it.
-* You will be prompted for an input directory (The folder containing your images)
-* You will be prompted for an output directory (The folder where the output will be saved)
+* You will be prompted for an input directory (The folder containing your images).
+* You will be prompted for an output directory (The folder where the output will be saved).
 
 The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name.
 
 To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio. The R scripts can then be opened within RStudio and run to process all the .csv files.
+* These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case.
+* You will need to edit the R scripts where prompted to set your working directory to the same location as the ImageJ macro output folder.
 
 ## Start-Mycoserv
 WIP
 
-* Utilises the code blocks written in the Mycoserv_Scipts folder
-* Allows for running on the Mycoserv and is run via the command line
+* Utilises the scripts written in the Mycoserv_Scipts folder via a batch file.
+* Allows for running on the Mycoserv and is run via the command line.
 
 ```
 $ FCI.bat <input_directory> <output-directory>
