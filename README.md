@@ -28,6 +28,10 @@ To use the macro on your local machine download all files from the Local_Scripts
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
+To run the macro on your local machine you also need to have StarDist and CSBDeep downloaded to ImageJ. If not downloaded you can solve this by opening ImageJ and seleting Toolbar -> Help -> Update -> Manage Update Sites -> (Now search + select 'StarDist' and 'CSBDeep').
+
+To ensure that your ImageJ results output gives full data, select Toolbar -> Analyse -> Set Measurements -> (Ensure that Feret's Diameter = TRUE, Shape Descriptors = TRUE, and Display Label = TRUE).
+
 To use the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
 
 ## Start-Local
