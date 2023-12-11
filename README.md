@@ -28,7 +28,7 @@ To use the macro on your local machine download all files from the Local_Scripts
 ```
 $ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
 ```
-To run the macro on your local machine you also need to have StarDist and CSBDeep downloaded to ImageJ. If not downloaded you can solve this by opening ImageJ and seleting:
+To run the macro on your local machine you also need to have StarDist and CSBDeep downloaded to ImageJ. If not downloaded you can solve this by opening ImageJ and selecting:
 ```
 Toolbar -> Help -> Update -> Manage Update Sites -> (Now search + select 'StarDist' and 'CSBDeep')
 ```
