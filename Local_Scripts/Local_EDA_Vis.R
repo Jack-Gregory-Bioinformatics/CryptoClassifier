@@ -1,5 +1,5 @@
 #Install required libraries
-#install.packages(c("ggplot2", "gridExtra", "GGally", "RColorBrewer", "dplyr"))
+#install.packages(c("ggplot2", "gridExtra", "GGally", "RColorBrewer", "dplyr")) # nolint
 
 # Load the required libraries
 library(ggplot2)

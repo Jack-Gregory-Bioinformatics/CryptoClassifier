@@ -1,5 +1,5 @@
 #Install required libraries
-#install.packages(c("dplyr", "stringr", "readr", "tidyr"))
+#install.packages(c("dplyr", "stringr", "readr", "tidyr")) # nolint
 
 # Load the required libraries
 library(dplyr)
@@ -7,7 +7,7 @@ library(stringr)
 library(readr)
 library(tidyr)
 
-# require(tidyverse)
+# require(tidyverse) # nolint
 
 # List all CSV files in the directory
 csv_directory <- "C:/Users/" #Insert your ImageJ macro output directory here
