@@ -49,7 +49,7 @@ Toolbar -> Plugins -> Macros -> Run -> (select the 'CryptoClassifier.ijm' macro 
 The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name.
 
 To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio, a helpful guide is here (https://www.dataquest.io/blog/installing-r-on-your-computer/). The R scripts can then be opened within RStudio and run to process all the .csv files.
-* These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case.
+* These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case (as per the MIT license).
 * You will need to edit the R scripts where prompted to set your working directory to the same location as the ImageJ macro output folder.
 
 ## Running remotely on Mycoserv
