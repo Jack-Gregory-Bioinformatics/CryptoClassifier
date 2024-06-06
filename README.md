@@ -43,10 +43,10 @@ To run this pipeline on your local machine, run the ImageJ macro (CryptoClassifi
 ```
 Toolbar -> Plugins -> Macros -> Run -> (select the 'CryptoClassifier.ijm' macro from where you saved it)
 ```
-* You will be prompted for an input directory (The folder containing your images).
-* You will be prompted for an output directory (The folder where the output will be saved).
+* A file browser will pop-up, prompting you for an input directory (the folder containing your microscopy images), select the input directory from your machines files.
+* After this another file browser will pop-up, prompting you for an output directory (the folder where the output will be saved), select or make a new output directory.
 
-The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name.
+The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name (this can be edited based on your fluorescent dye used within the macro).
 
 To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio, a helpful guide is here (https://www.dataquest.io/blog/installing-r-on-your-computer/). The R scripts can then be opened within RStudio and run to process all the .csv files.
 * These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case (as per the MIT license).
