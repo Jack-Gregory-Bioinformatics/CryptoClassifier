@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue) ![](https://img.shields.io/badge/Stable_Local_build-v1.3-green) ![](https://img.shields.io/badge/Stable_Mycoserv_build-WIP-orange)
-# ImageJ-Microscopy-Automation
+# CryptoClassifier: an open-source automated ImageJ analysis pipeline for Cryptococcus microscopy image analysis
 ## Table of contents
 * [Introduction](#Intro)
 * [Installation](#Installation)
@@ -8,7 +8,7 @@
 * [Flowchart](#visual-flowchart-of-ijm-macro)
 
 ## Intro
-The scope of this project is to automate microscopy image analysis utilising Fiji/ImageJ.
+Microscopy image analysis is crucial in many biological research areas, especially for studying human pathogens like Cryptococcus. However, manual analysis can be time-consuming, prone to human error, and often not accurately reproducible between different users in the lab. The aim of CryptoClassifier is to automate microscopy image analysis, utilising Fiji/ImageJ. It is designed to streamline the process, accurately classify morphologies such as titan cells, yeast cells, or titanides, and enhance reproducibility and openness in research practices.
 
 The ImageJ macro (FCI_v*.ijm) automatically removes background fluorescence, detects cells and provides relevant data on a per image basis, allowing for the analysis of images of varying quality with no extra user input. The macro will output 3 files per image:
 * .csv file (contains all identified cell data, each row = individual cell).
