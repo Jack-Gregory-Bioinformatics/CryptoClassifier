@@ -4,8 +4,8 @@
 * [Introduction](#Introduction)
 * [Installation](#Installation)
 * [Running-Local](#Running-on-your-local-machine)
-* [Running-Mycoserv](#Running-remotely-on-'Mycoserv')
-* [Flowchart](#Visual-flowchart-of-CryptoClassifier.ijm-macro)
+* [Running-Mycoserv](#Running-remotely-on-Mycoserv)
+* [Flowchart](#Visual-flowchart-of-CryptoClassifier-macro)
 
 ## Introduction
 Microscopy image analysis is crucial in many biological research areas, especially for studying human pathogens like Cryptococcus. However, manual analysis can be time-consuming, prone to human error, and often not accurately reproducible between different users in the lab. The aim of CryptoClassifier is to automate microscopy image analysis, utilising Fiji/ImageJ. It is designed to streamline the process, accurately classify morphologies such as titan cells, yeast cells, or titanides, and enhance reproducibility and openness in research practices.
@@ -52,7 +52,7 @@ To run the R scripts, a local R environment needs to be available. This can be a
 * These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case.
 * You will need to edit the R scripts where prompted to set your working directory to the same location as the ImageJ macro output folder.
 
-## Running remotely on 'Mycoserv'
+## Running remotely on Mycoserv
 Work in Progress
 
 * Utilises the scripts written in the Mycoserv_Scipts folder via a batch file.
@@ -63,7 +63,7 @@ $ FCI.bat <input_directory> <output-directory>
 
 ```
 
-## Visual flowchart of CryptoClassifier.ijm macro
+## Visual flowchart of CryptoClassifier macro
 
 
 This is a basic flowchart of the stages that are being processed on each image. It does not include or summarise the R scripts for data cleanup or EDA/visualisation.
