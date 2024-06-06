@@ -3,9 +3,9 @@
 ## Table of contents
 * [Introduction](#Introduction)
 * [Installation](#Installation)
-* [Running-Local](#Running-on-your-local-machine)
-* [Running-Mycoserv](#Running-remotely-on-Mycoserv)
-* [Flowchart](#Visual-flowchart-of-CryptoClassifier-macro)
+* [Running locally on your machine](#Running-on-your-local-machine)
+* [Running remotely on Mycoserv](#Running-remotely-on-Mycoserv)
+* [Flowchart of CryptoClassifier processes](#Visual-flowchart-of-CryptoClassifier-macro)
 
 ## Introduction
 Microscopy image analysis is crucial in many biological research areas, especially for studying human pathogens like Cryptococcus. However, manual analysis can be time-consuming, prone to human error, and often not accurately reproducible between different users in the lab. The aim of CryptoClassifier is to automate microscopy image analysis, utilising Fiji/ImageJ. It is designed to streamline the process, accurately classify morphologies such as titan cells, yeast cells, or titanides, and enhance reproducibility and openness in research practices.
