@@ -1,13 +1,13 @@
 ![](https://img.shields.io/badge/Automation-Fiji_ImageJ-blue) ![](https://img.shields.io/badge/Stable_Local_build-v1.3-green) ![](https://img.shields.io/badge/Stable_Mycoserv_build-WIP-orange)
 # CryptoClassifier: an open-source automated ImageJ analysis pipeline for Cryptococcus microscopy image analysis
 ## Table of contents
-* [Introduction](#Intro)
+* [Introduction](#Introduction)
 * [Installation](#Installation)
 * [Start-Local](#Start-Local)
 * [Start-Mycoserv](#Start-Mycoserv)
 * [Flowchart](#visual-flowchart-of-ijm-macro)
 
-## Intro
+## Introduction
 Microscopy image analysis is crucial in many biological research areas, especially for studying human pathogens like Cryptococcus. However, manual analysis can be time-consuming, prone to human error, and often not accurately reproducible between different users in the lab. The aim of CryptoClassifier is to automate microscopy image analysis, utilising Fiji/ImageJ. It is designed to streamline the process, accurately classify morphologies such as titan cells, yeast cells, or titanides, and enhance reproducibility and openness in research practices.
 
 The ImageJ macro (CryptoClassifier.ijm) automatically removes background fluorescence, detects cells and provides relevant data on a per image basis, allowing for the analysis of images of varying quality with no extra user input. The macro will output 3 files per image:
@@ -36,7 +36,7 @@ To ensure that your ImageJ results output gives full data, open ImageJ and selec
 ```
 Toolbar -> Analyse -> Set Measurements -> (Ensure that Feret's Diameter = TRUE, Shape Descriptors = TRUE, and Display Label = TRUE)
 ```
-To use the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
+To use the pipeline on the Mycoserv server you need not download files, the pipeline is set up already (Work in Progress).
 
 ## Start-Local
 To run this pipeline on your local machine, run the ImageJ macro (CryptoClassifier.ijm) using ImageJ by selecting:
@@ -48,12 +48,12 @@ Toolbar -> Plugins -> Macros -> Run -> (select the 'CryptoClassifier.ijm' macro 
 
 The macro will now be run on all '.tiff' files in the input directory that also include 'DAPI' in their file name.
 
-To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio. The R scripts can then be opened within RStudio and run to process all the .csv files.
+To run the R scripts, a local R environment needs to be available. This can be acheived by downloading R and RStudio, a helpful guide is here (https://www.dataquest.io/blog/installing-r-on-your-computer/). The R scripts can then be opened within RStudio and run to process all the .csv files.
 * These current R scripts are setup to process and graph with Cryptococcus neoformans morphology in mind (namely to show titan cells). Feel free to edit the scipts per your own use case.
 * You will need to edit the R scripts where prompted to set your working directory to the same location as the ImageJ macro output folder.
 
 ## Start-Mycoserv
-WIP
+Work in Progress
 
 * Utilises the scripts written in the Mycoserv_Scipts folder via a batch file.
 * Allows for running on the Mycoserv and is run via the command line.
