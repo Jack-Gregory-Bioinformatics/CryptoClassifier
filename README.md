@@ -15,7 +15,7 @@ The ImageJ macro (CryptoClassifier.ijm) automatically removes background fluores
 * StarDist masking .jpeg with labels (allows for manual checking and cross referencing with the .csv file).
 * Background fluorescence removed .jpeg (allows for easy check of image quality).
 
-To aid with data processing, a Data_Cleanup.R script has been created to process all the .csv files generated, extract relevant data and rename column headers to a human readable format. To aid with data analysis, a EDA_Vis.R script has been created to carry out exploratory data analysis and visualisation.
+To aid with data processing, a Local_Data_Cleanup.R script has been created to process all the .csv files generated, extract relevant data and rename column headers to a more easily human readable format/name. To aid with data analysis, a Local_EDA_Vis.R script has been created to carry out exploratory data analysis and visualisation, generating statistics and graphs for proportions of titan cells, yeast cells, and titanides per condition/image set.
 
 ## Installation
 Project is created with:
