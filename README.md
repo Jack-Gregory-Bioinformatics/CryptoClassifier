@@ -10,7 +10,7 @@
 ## Intro
 Microscopy image analysis is crucial in many biological research areas, especially for studying human pathogens like Cryptococcus. However, manual analysis can be time-consuming, prone to human error, and often not accurately reproducible between different users in the lab. The aim of CryptoClassifier is to automate microscopy image analysis, utilising Fiji/ImageJ. It is designed to streamline the process, accurately classify morphologies such as titan cells, yeast cells, or titanides, and enhance reproducibility and openness in research practices.
 
-The ImageJ macro (FCI_v*.ijm) automatically removes background fluorescence, detects cells and provides relevant data on a per image basis, allowing for the analysis of images of varying quality with no extra user input. The macro will output 3 files per image:
+The ImageJ macro (CryptoClassifier.ijm) automatically removes background fluorescence, detects cells and provides relevant data on a per image basis, allowing for the analysis of images of varying quality with no extra user input. The macro will output 3 files per image:
 * .csv file (contains all identified cell data, each row = individual cell).
 * StarDist masking .jpeg with labels (allows for manual checking and cross referencing with the .csv file).
 * Background fluorescence removed .jpeg (allows for easy check of image quality).
@@ -26,7 +26,7 @@ Project is created with:
 
 To use the macro on your local machine download all files from the Local_Scripts folder or run the following code:
 ```
-$ wget -O https://github.com/JackUoE/ImageJ-Microscopy-Automation.git
+$ wget -O https://github.com/Jack-Gregory-Bioinformatics/CryptoClassifier.git
 ```
 To run the macro on your local machine you also need to have StarDist and CSBDeep downloaded to ImageJ. If not downloaded you can solve this by opening ImageJ and selecting:
 ```
@@ -39,9 +39,9 @@ Toolbar -> Analyse -> Set Measurements -> (Ensure that Feret's Diameter = TRUE, 
 To use the pipeline on the Mycoserv you need not download files, the pipeline is set up already (WIP).
 
 ## Start-Local
-To run this pipeline on your local machine, run the ImageJ macro (FCI_v*.ijm) using ImageJ by selecting:
+To run this pipeline on your local machine, run the ImageJ macro (CryptoClassifier.ijm) using ImageJ by selecting:
 ```
-Toolbar -> Plugins -> Macros -> Run -> (select the 'FCI_v*.ijm' macro from where you saved it)
+Toolbar -> Plugins -> Macros -> Run -> (select the 'CryptoClassifier.ijm' macro from where you saved it)
 ```
 * You will be prompted for an input directory (The folder containing your images).
 * You will be prompted for an output directory (The folder where the output will be saved).
