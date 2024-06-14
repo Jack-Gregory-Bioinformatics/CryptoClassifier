@@ -8,7 +8,7 @@ library(GGally)
 library(RColorBrewer)
 library(dplyr)
 
-setwd("C:/Users/") #Insert your ImageJ macro output directory here) # nolint
+setwd("/Users/jack/Library/CloudStorage/OneDrive-UniversityofExeter/Documents/2023_24_PhD_Year_1/04_ImageJ_Automation/Dan_Data_set/H99") #Insert your ImageJ macro output directory here) # nolint
 
 # Read the combined_data.csv file
 combined_data <- read.csv("combined_data.csv", fileEncoding = "UTF-8")

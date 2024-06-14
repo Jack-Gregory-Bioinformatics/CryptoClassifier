@@ -36,6 +36,11 @@ To ensure that your ImageJ results output gives full data, open ImageJ and selec
 ```
 Toolbar -> Analyse -> Set Measurements -> (Ensure that Feret's Diameter = TRUE, Shape Descriptors = TRUE, and Display Label = TRUE)
 ```
+***Note for macOS users***
+Users will need to downgrade the version of TensorFlow installed in ImageJ to avoid crashes. You can do this by opening ImageJ and selecting:
+```
+Toolbar -> Edit -> Options -> TensorFlow -> (Now select 'TF 1.12.0 CPU')
+```
 To use the pipeline on the Mycoserv server you need not download files, the pipeline is set up already (Work in Progress).
 
 ## Running on your local machine
