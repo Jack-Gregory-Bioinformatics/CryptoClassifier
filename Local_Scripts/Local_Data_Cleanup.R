@@ -10,7 +10,7 @@ library(tidyr)
 # require(tidyverse) # nolint
 
 # List all CSV files in the directory
-csv_directory <- "C:/Users/" #Insert your ImageJ macro output directory here
+csv_directory <- "/CryptoClassifier/OutputDirectory" #Insert your ImageJ macro output directory here
 
 csv_files <- list.files(csv_directory, pattern = "\\.csv$", full.names = TRUE)
 
@@ -19,8 +19,8 @@ processed_data_list <- list()
 
 # Loop through each CSV file
 for (file in csv_files) {
-  # Read the CSV file, skipping the last row
-  data <- read.csv(text = paste0(head(readLines(file), -1), collapse = "\n"))
+  # Read the CSV file
+  data <- read.csv(file)
   data$ID <- seq.int(nrow(data))
 
   # Select and rename columns
@@ -32,15 +32,22 @@ for (file in csv_files) {
       Circularity = Circ.,
       Area_um = Area,
       Diameter_um = Feret,
-      Cell_ID = ID
+      Seq_ID = ID
     )
 
   # Extract and format the Condition column
-
   # Split label column into EB naming scheme
   data <- data %>%
-    separate(Condition, into = c("Date", "Strain", "Condition", "Time", "Stain", "Rep", "Image"), sep = "_") #This will need to be edited based on your labs naming scheme # nolint
+    separate(Condition, into = c("Sum", "Plate", "Time", "Condition", "Stain", "Well", "Count"), sep = "_") #This will need to be edited based on your labs naming scheme # nolint
 
+  data <- data %>%
+    select(Plate, Time, Condition, Stain, Well, Count, Mean_Fluorescence, Circularity, Area_um, Diameter_um, Seq_ID) %>%
+    separate(Well, into = c("Well", "Rep"), sep = "-") %>%
+    separate(Count, into = c("Count", "Cell_ID"), sep = ":")
+    
+  
+  data$Count <- substr(data$Count, 1, 3)
+  
   # Generate the output file name
   output_file <- paste0(data$Condition[1], "_processed_data.csv")
 
