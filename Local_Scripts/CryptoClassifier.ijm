@@ -22,6 +22,8 @@ list = getFileList(dir1);
 
 setBatchMode(true);
 
+showProgress(0);
+
 print("Running please wait...")
 
 if (z_stack_boolean==false) {
