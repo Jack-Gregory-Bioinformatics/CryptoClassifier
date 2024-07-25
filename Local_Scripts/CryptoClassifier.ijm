@@ -78,6 +78,14 @@ if (z_stack_boolean==false) {
 
                              run("Command From Macro", "command=[de.csbdresden.stardist.StarDist2D], args=['input':'"+ImageID+"', 'modelChoice':'Versatile (fluorescent nuclei)', 'normalizeInput':'true', 'percentileBottom':'1.0', 'percentileTop':'99.8', 'probThresh':'0.5', 'nmsThresh':'0.4', 'outputType':'Both', 'nTiles':'1', 'excludeBoundary':'2', 'roiPosition':'Automatic', 'verbose':'false', 'showCsbdeepProgress':'false', 'showProbAndDist':'false'], process=[false]");
                              
+                             n = roiManager("count");
+                             for (p=n-1; p>=0; p--) {
+	                             roiManager("select", p);
+	                             getSelectionBounds(x, y, w, h);
+	                             if (x<=5||y<=5||x+w>=getWidth-5||y+h>=getHeight-5)roiManager("delete");
+                             }
+                             roiManager("Deselect");
+
                              roiManager("Measure");
                              
                              setResult("Mean", nResults, background);
@@ -143,6 +151,14 @@ else {
 									
 									 run("Command From Macro", "command=[de.csbdresden.stardist.StarDist2D], args=['input':'SUM_" + imageList[j] + "', 'modelChoice':'Versatile (fluorescent nuclei)', 'normalizeInput':'true', 'percentileBottom':'1.0', 'percentileTop':'99.8', 'probThresh':'0.5', 'nmsThresh':'0.4', 'outputType':'Both', 'nTiles':'1', 'excludeBoundary':'2', 'roiPosition':'Automatic', 'verbose':'false', 'showCsbdeepProgress':'false', 'showProbAndDist':'false'], process=[false]");
                              		
+                                     n = roiManager("count");
+                                     for (p=n-1; p>=0; p--) {
+	                                     roiManager("select", p);
+	                                     getSelectionBounds(x, y, w, h);
+	                                     if (x<=5||y<=5||x+w>=getWidth-5||y+h>=getHeight-5)roiManager("delete");
+                                     }
+                                     roiManager("Deselect");
+
                              		 roiManager("Measure");
                              		 
                                      saveAs("Results", dir2 + ImageID_minus_extension + "_DAPI.csv");
