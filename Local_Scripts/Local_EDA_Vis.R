@@ -58,9 +58,9 @@ diameter_vs_area_plot <- ggplot(combined_data, aes(x = `Diameter_um`, y = `Area_
 # Add a red dashed line at 10 micrometers (to show titan cells) and blue at 3 micrometers (to show titanides) # nolint
 diameter_vs_area_plot +
   geom_vline(xintercept = 10, linetype = "dashed", color = "red") +
-  annotate("text", x = 10, y = max(combined_data$Mean_Fluorescence), label = ">10 µm", hjust = -0.2, colour = "red") + # nolint
+  annotate("text", x = 10, y = max(combined_data$Area_um), label = ">10 µm", hjust = -0.2, colour = "red") + # nolint
   geom_vline(xintercept = 3, linetype = "dashed", color = "blue") +
-  annotate("text", x = 3, y = max(combined_data$Mean_Fluorescence), label = "<3 µm", hjust = 1.2, colour = "blue") # nolint
+  annotate("text", x = 3, y = max(combined_data$Area_um), label = "<3 µm", hjust = 1.2, colour = "blue") # nolint
 
 
 ggsave("scatterplot_diameter_vs_area.png", device = "png", width = 8, height = 6) # nolint
